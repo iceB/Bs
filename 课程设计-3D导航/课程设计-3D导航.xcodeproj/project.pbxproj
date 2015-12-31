@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		7AD560EC1C33DC57009BD07D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD560EB1C33DC57009BD07D /* main.m */; };
 		7AD560EF1C33DC57009BD07D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD560EE1C33DC57009BD07D /* AppDelegate.m */; };
-		7AD560F21C33DC57009BD07D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD560F11C33DC57009BD07D /* ViewController.m */; };
-		7AD560F51C33DC57009BD07D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD560F31C33DC57009BD07D /* Main.storyboard */; };
 		7AD560F71C33DC57009BD07D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD560F61C33DC57009BD07D /* Assets.xcassets */; };
 		7AD560FA1C33DC57009BD07D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD560F81C33DC57009BD07D /* LaunchScreen.storyboard */; };
 		7AD561051C33DC57009BD07D /* _____3D__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD561041C33DC57009BD07D /* _____3D__Tests.m */; };
@@ -39,9 +37,6 @@
 		7AD560EB1C33DC57009BD07D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7AD560ED1C33DC57009BD07D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AD560EE1C33DC57009BD07D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7AD560F01C33DC57009BD07D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7AD560F11C33DC57009BD07D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7AD560F41C33DC57009BD07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AD560F61C33DC57009BD07D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AD560F91C33DC57009BD07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AD560FB1C33DC57009BD07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,9 +98,6 @@
 			children = (
 				7AD560ED1C33DC57009BD07D /* AppDelegate.h */,
 				7AD560EE1C33DC57009BD07D /* AppDelegate.m */,
-				7AD560F01C33DC57009BD07D /* ViewController.h */,
-				7AD560F11C33DC57009BD07D /* ViewController.m */,
-				7AD560F31C33DC57009BD07D /* Main.storyboard */,
 				7AD560F61C33DC57009BD07D /* Assets.xcassets */,
 				7AD560F81C33DC57009BD07D /* LaunchScreen.storyboard */,
 				7AD560FB1C33DC57009BD07D /* Info.plist */,
@@ -246,7 +238,6 @@
 			files = (
 				7AD560FA1C33DC57009BD07D /* LaunchScreen.storyboard in Resources */,
 				7AD560F71C33DC57009BD07D /* Assets.xcassets in Resources */,
-				7AD560F51C33DC57009BD07D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD560F21C33DC57009BD07D /* ViewController.m in Sources */,
 				7AD560EF1C33DC57009BD07D /* AppDelegate.m in Sources */,
 				7AD560EC1C33DC57009BD07D /* main.m in Sources */,
 			);
@@ -309,14 +299,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7AD560F31C33DC57009BD07D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AD560F41C33DC57009BD07D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7AD560F81C33DC57009BD07D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -501,6 +483,7 @@
 				7AD561161C33DC57009BD07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AD561171C33DC57009BD07D /* Build configuration list for PBXNativeTarget "课程设计-3D导航Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +492,7 @@
 				7AD561191C33DC57009BD07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AD5611A1C33DC57009BD07D /* Build configuration list for PBXNativeTarget "课程设计-3D导航UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +501,7 @@
 				7AD5611C1C33DC57009BD07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
