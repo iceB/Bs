@@ -6,6 +6,7 @@
 //  Copyright © 2015年 iceB. All rights reserved.
 //
 
+//高德appKey:e91a6524b617d0922e85a99a74b1d62a
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -19,8 +20,9 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor clearColor];
-    
-    
+    UIViewController *ctrl = [[UIViewController alloc]init];
+    self.window.rootViewController = ctrl;
+    ctrl.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.8];
     [self.window makeKeyAndVisible];
     
     // Override point for customization after application launch.
