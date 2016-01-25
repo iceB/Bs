@@ -21,13 +21,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+ 
+    SBKBeaconID *beaconID = [SBKBeaconID beaconIDWithProximityUUID:SBKSensoroDefaultProximityUUID];
+    [[SBKBeaconManager sharedInstance] startRangingBeaconsWithID:beaconID
+                                               wakeUpApplication:YES];
+    SBKBeaconID *beaconIDWeChat = [SBKBeaconID beaconIDWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"23A01AF0-232A-4518-9C0E-323FB773F5EF"]];
+    [[SBKBeaconManager sharedInstance] startRangingBeaconsWithID:beaconIDWeChat
+                                               wakeUpApplication:YES];
+    
+    [[SBKBeaconManager sharedInstance] requestAlwaysAuthorization];
+    //测试用防蹭用密钥，期限到2016-01-01
+    [[SBKBeaconManager sharedInstance] addBroadcastKey:@"01Y2GLh1yw3+6Aq0RsnOQ8xNvXTnDUTTLE937Yedd/DnlcV0ixCWo7JQ+VEWRSya80yea6u5aWgnW1ACjKNzFnig=="];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor clearColor];
     YPViewController *ctrl = [[YPViewController alloc]init];
     self.window.rootViewController = ctrl;
     ctrl.view.backgroundColor = [UIColor grayColor];
-    
-    
     [self.window makeKeyAndVisible];
     
     // Override point for customization after application launch.

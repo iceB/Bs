@@ -21,31 +21,60 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     /*初始化UUID*/
-    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"23A01AF0-232A-4518-9C0E-323FB773F5EF"];
-    SBKBeaconID *beaconID = [SBKBeaconID beaconIDWithProximityUUID:uuid];
-    
-    /* 设置云子防蹭用密钥 (如果没有可以不设置) */
-//    [[SBKBeaconManager sharedInstance]addBroadcastKey:@"01Y2GLh1yw3+6Aq0RsnOQ8xNvXTnDUTTLE937Yedd/DnkHESUpvQ7YvLucs9YfwGR5R/jwW8Rqp9XtGbmwbKXzXQ=="];
-    
-    /*开始扫描*/
-    [[SBKBeaconManager sharedInstance] startRangingBeaconsWithID:beaconID
-                                               wakeUpApplication:NO];
-    /*申请权限*/
-    [[SBKBeaconManager sharedInstance] requestAlwaysAuthorization];
-    
-    /* 设置启用云服务 (上传传感器数据，如电量、UMM等)。如果不设置，默认为关闭状态。*/
-    [[SBKBeaconManager sharedInstance] setCloudServiceEnable:YES];
-    
     [SBKBeaconManager sharedInstance].delegate = self;
-
+    NSLog(@"%@",[SBKBeaconManager sharedInstance].version);
+    
     sb = [[SBKBeacon alloc]init];
     sb.delegate = self;
     
 }
-- (void)beaconManager:(SBKBeaconManager *)beaconManager didRangeNewBeacon:(SBKBeacon *)beacon{
+
+-(BOOL)checkLocationServices
+{
+    if (!self.locationManager) {
+        
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.desiredAccuracy=kCLLocationAccuracyBest;
+        self.locationManager.distanceFilter=100.0f;
+    }
+    
+    BOOL enable=[CLLocationManager locationServicesEnabled];//定位服务是否可用
+    
+    int status=[CLLocationManager authorizationStatus];//是否具有定位权限
+    if(!enable || status<3){
+        if([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]){
+            [self.locationManager requestAlwaysAuthorization];//请求权限
+        }
+        return NO;//需求请求定位权限
+        
+    }
+    return YES;
+}
+-(BOOL)checkBluetoothServices
+{
+    if (!self.CM) {
+        self.CM = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
+    }
+    if (self.CM.state == CBCentralManagerStatePoweredOff) {
+        return NO;
+    }
+    else if(self.CM.state == CBCentralManagerStatePoweredOn){
+        return YES;
+    }
+    return YES;
+}
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central{
     
 }
 
+#pragma mark - delegate
+
+- (void)beaconManager:(SBKBeaconManager *)beaconManager didRangeNewBeacon:(SBKBeacon *)beacon{
+    
+}
+-(void)beacon:(SBKBeacon *)beacon{
+    
+}
 /* 传感器设备离开 */
 - (void)beaconManager:(SBKBeaconManager *)beaconManager beaconDidGone:(SBKBeacon *)beacon{
     
@@ -53,7 +82,10 @@
 
 /* 每秒返回还在范围内的传感器设备 */
 - (void)beaconManager:(SBKBeaconManager *)beaconManager scanDidFinishWithBeacons:(NSArray *)beacons{
-    
+    if(beacons.count>0){
+        SBKBeacon *beacon = beacons[0];
+        NSLog(@"%d,距离：%f",(int)beacon.rssi,beacon.accuracy);
+    }
 }
 
 /* 传感器设备信号强度变化*/

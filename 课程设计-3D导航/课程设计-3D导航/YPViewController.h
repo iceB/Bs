@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "SBKBeaconManager.h"
 
-@interface YPViewController : UIViewController<SBKBeaconManagerDelegate,SBKBeaconDelegate>
+@interface YPViewController : UIViewController<SBKBeaconManagerDelegate,SBKBeaconDelegate,CBCentralManagerDelegate>
+@property (nonatomic,strong) CLLocationManager * locationManager;
+@property (nonatomic, strong) CBCentralManager * CM;
 
 @end

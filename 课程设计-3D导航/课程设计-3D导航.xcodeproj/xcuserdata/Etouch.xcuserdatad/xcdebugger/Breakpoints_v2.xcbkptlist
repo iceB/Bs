@@ -10,27 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x8bfe;&#x7a0b;&#x8bbe;&#x8ba1;-3D&#x5bfc;&#x822a;/YPViewController.m"
-            timestampString = "474954313.537642"
+            timestampString = "474974404.470904"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "-beaconManager:didRangeNewBeacon:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x8bfe;&#x7a0b;&#x8bbe;&#x8ba1;-3D&#x5bfc;&#x822a;/YPViewController.m"
-            timestampString = "474954313.537642"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-beaconManager:scanDidFinishWithBeacons:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,60 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x8bfe;&#x7a0b;&#x8bbe;&#x8ba1;-3D&#x5bfc;&#x822a;/YPViewController.m"
-            timestampString = "474954377.379867"
+            timestampString = "474974082.771948"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "-sensoroBeacon:didUpdateTemperatureData:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x8bfe;&#x7a0b;&#x8bbe;&#x8ba1;-3D&#x5bfc;&#x822a;/YPViewController.m"
-            timestampString = "474954379.338822"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "-sensoroBeacon:didUpdateAccelerometerCount:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x8bfe;&#x7a0b;&#x8bbe;&#x8ba1;-3D&#x5bfc;&#x822a;/YPViewController.m"
-            timestampString = "474954380.186729"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "-sensoroBeacon:didUpdateMovingState:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x8bfe;&#x7a0b;&#x8bbe;&#x8ba1;-3D&#x5bfc;&#x822a;/YPViewController.m"
-            timestampString = "474954383.91482"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-sensoroBeacon:didUpdateRSSI:"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
