@@ -34,9 +34,10 @@
     [[SBKBeaconManager sharedInstance] addBroadcastKey:@"01Y2GLh1yw3+6Aq0RsnOQ8xNvXTnDUTTLE937Yedd/DnlcV0ixCWo7JQ+VEWRSya80yea6u5aWgnW1ACjKNzFnig=="];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor clearColor];
-    YPViewController *ctrl = [[YPViewController alloc]init];
-    self.window.rootViewController = ctrl;
-    ctrl.view.backgroundColor = [UIColor grayColor];
+    YPViewController * MainCtrl = [[YPViewController alloc]init];
+    MainCtrl.view.backgroundColor = [UIColor grayColor];
+    UINavigationController *navCtrl = [[UINavigationController alloc]initWithRootViewController:MainCtrl];
+    self.window.rootViewController = navCtrl;
     [self.window makeKeyAndVisible];
     
     // Override point for customization after application launch.

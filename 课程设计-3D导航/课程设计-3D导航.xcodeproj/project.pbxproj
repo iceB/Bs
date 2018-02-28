@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A80BFF11C4F2140000DB77F /* libSensoroBeaconKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80BFEF1C4F2140000DB77F /* libSensoroBeaconKit.a */; };
-		7A80BFF21C4F2140000DB77F /* libSensoroCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80BFF01C4F2140000DB77F /* libSensoroCloud.a */; };
+		7A80BFF21C4F2140000DB77F /* libSensoroCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80BFF01C4F2140000DB77F /* libSensoroCloud.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		7A80BFF71C4F2283000DB77F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80BFF61C4F2283000DB77F /* CoreBluetooth.framework */; };
 		7A80BFF91C4F228D000DB77F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80BFF81C4F228D000DB77F /* CoreLocation.framework */; };
 		7A80BFFB1C4F2293000DB77F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A80BFFA1C4F2293000DB77F /* Security.framework */; };
@@ -19,6 +19,14 @@
 		7AD560FA1C33DC57009BD07D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD560F81C33DC57009BD07D /* LaunchScreen.storyboard */; };
 		7AD561051C33DC57009BD07D /* _____3D__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD561041C33DC57009BD07D /* _____3D__Tests.m */; };
 		7AD561101C33DC57009BD07D /* _____3D__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5610F1C33DC57009BD07D /* _____3D__UITests.m */; };
+		A73310261CE5757B00E7560F /* UIColor+extend.m in Sources */ = {isa = PBXBuildFile; fileRef = A73310251CE5757B00E7560F /* UIColor+extend.m */; };
+		A73310781CE7290700E7560F /* YPToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = A73310771CE7290700E7560F /* YPToastView.m */; };
+		A75135AC1D06B10B003DDACD /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = A75135AB1D06B10B003DDACD /* iToast.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A75135AF1D06DA10003DDACD /* Fingerprin.m in Sources */ = {isa = PBXBuildFile; fileRef = A75135AE1D06DA10003DDACD /* Fingerprin.m */; };
+		A75135B21D06E773003DDACD /* YPDistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A75135B11D06E773003DDACD /* YPDistModel.m */; };
+		A76A750D1CE4C6A800D897DD /* YPDormMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76A750C1CE4C6A800D897DD /* YPDormMapView.m */; };
+		A7FA83A31CE4276700696F66 /* YPDormMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA83A21CE4276700696F66 /* YPDormMapViewController.m */; };
+		B1666E742BB101334DA3C44A /* libPods-课程设计-3D导航.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 876E6027214097AB3ECFC25B /* libPods-课程设计-3D导航.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5454DF8569AB8AC14A904BA7 /* Pods-课程设计-3D导航.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-课程设计-3D导航.debug.xcconfig"; path = "Pods/Target Support Files/Pods-课程设计-3D导航/Pods-课程设计-3D导航.debug.xcconfig"; sourceTree = "<group>"; };
 		7A80BFE41C4F2140000DB77F /* SBKBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeacon.h; sourceTree = "<group>"; };
 		7A80BFE51C4F2140000DB77F /* SBKBeaconID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconID.h; sourceTree = "<group>"; };
 		7A80BFE61C4F2140000DB77F /* SBKBeaconManager+Cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SBKBeaconManager+Cloud.h"; sourceTree = "<group>"; };
@@ -65,11 +74,29 @@
 		7AD560F91C33DC57009BD07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AD560FB1C33DC57009BD07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AD561001C33DC57009BD07D /* 课程设计-3D导航Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "课程设计-3D导航Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AD561041C33DC57009BD07D /* _____3D__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____3D__Tests.m"; sourceTree = "<group>"; };
+		7AD561041C33DC57009BD07D /* _____3D__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _____3D__Tests.m; sourceTree = "<group>"; };
 		7AD561061C33DC57009BD07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AD5610B1C33DC57009BD07D /* 课程设计-3D导航UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "课程设计-3D导航UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AD5610F1C33DC57009BD07D /* _____3D__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____3D__UITests.m"; sourceTree = "<group>"; };
+		7AD5610F1C33DC57009BD07D /* _____3D__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _____3D__UITests.m; sourceTree = "<group>"; };
 		7AD561111C33DC57009BD07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876E6027214097AB3ECFC25B /* libPods-课程设计-3D导航.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-课程设计-3D导航.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73310241CE5757B00E7560F /* UIColor+extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+extend.h"; sourceTree = "<group>"; };
+		A73310251CE5757B00E7560F /* UIColor+extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extend.m"; sourceTree = "<group>"; };
+		A73310671CE6274900E7560F /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMDB.a; path = "Pods/../build/Debug-iphoneos/libFMDB.a"; sourceTree = "<group>"; };
+		A73310691CE6274E00E7560F /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "Pods/../build/Debug-iphoneos/libMasonry.a"; sourceTree = "<group>"; };
+		A73310761CE7290700E7560F /* YPToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPToastView.h; sourceTree = "<group>"; };
+		A73310771CE7290700E7560F /* YPToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPToastView.m; sourceTree = "<group>"; };
+		A75135AA1D06B10B003DDACD /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
+		A75135AB1D06B10B003DDACD /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
+		A75135AD1D06DA10003DDACD /* Fingerprin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fingerprin.h; sourceTree = "<group>"; };
+		A75135AE1D06DA10003DDACD /* Fingerprin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fingerprin.m; sourceTree = "<group>"; };
+		A75135B01D06E773003DDACD /* YPDistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDistModel.h; sourceTree = "<group>"; };
+		A75135B11D06E773003DDACD /* YPDistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDistModel.m; sourceTree = "<group>"; };
+		A76A750B1CE4C6A800D897DD /* YPDormMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDormMapView.h; sourceTree = "<group>"; };
+		A76A750C1CE4C6A800D897DD /* YPDormMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDormMapView.m; sourceTree = "<group>"; };
+		A7FA83A11CE4276700696F66 /* YPDormMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDormMapViewController.h; sourceTree = "<group>"; };
+		A7FA83A21CE4276700696F66 /* YPDormMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDormMapViewController.m; sourceTree = "<group>"; };
+		ED494637E4721C937E3B081F /* Pods-课程设计-3D导航.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-课程设计-3D导航.release.xcconfig"; path = "Pods/Target Support Files/Pods-课程设计-3D导航/Pods-课程设计-3D导航.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +109,7 @@
 				7A80BFF71C4F2283000DB77F /* CoreBluetooth.framework in Frameworks */,
 				7A80BFF11C4F2140000DB77F /* libSensoroBeaconKit.a in Frameworks */,
 				7A80BFF21C4F2140000DB77F /* libSensoroCloud.a in Frameworks */,
+				B1666E742BB101334DA3C44A /* libPods-课程设计-3D导航.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +151,8 @@
 		7A80BFF31C4F21F9000DB77F /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				A75135AA1D06B10B003DDACD /* iToast.h */,
+				A75135AB1D06B10B003DDACD /* iToast.m */,
 				7A80BFF41C4F221A000DB77F /* yunzi */,
 			);
 			name = 3rd;
@@ -155,6 +185,8 @@
 				7AD561031C33DC57009BD07D /* 课程设计-3D导航Tests */,
 				7AD5610E1C33DC57009BD07D /* 课程设计-3D导航UITests */,
 				7AD560E81C33DC57009BD07D /* Products */,
+				C635D6C578E4E38E5CE562FC /* Frameworks */,
+				8DE7CEDED8EEC4D0A0915E5D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,13 +203,8 @@
 		7AD560E91C33DC57009BD07D /* 课程设计-3D导航 */ = {
 			isa = PBXGroup;
 			children = (
-				7AD560ED1C33DC57009BD07D /* AppDelegate.h */,
-				7AD560EE1C33DC57009BD07D /* AppDelegate.m */,
-				7A80BFFC1C4F2B1C000DB77F /* YPViewController.h */,
-				7A80BFFD1C4F2B1C000DB77F /* YPViewController.m */,
-				7AD560F61C33DC57009BD07D /* Assets.xcassets */,
-				7AD560F81C33DC57009BD07D /* LaunchScreen.storyboard */,
-				7AD560FB1C33DC57009BD07D /* Info.plist */,
+				A73310661CE595C000E7560F /* 主页 */,
+				A76A75071CE4C65F00D897DD /* 室内地图 */,
 				7A80BFF31C4F21F9000DB77F /* 3rd */,
 				7AD560EA1C33DC57009BD07D /* Supporting Files */,
 			);
@@ -187,6 +214,11 @@
 		7AD560EA1C33DC57009BD07D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7AD560ED1C33DC57009BD07D /* AppDelegate.h */,
+				7AD560EE1C33DC57009BD07D /* AppDelegate.m */,
+				7AD560F61C33DC57009BD07D /* Assets.xcassets */,
+				7AD560F81C33DC57009BD07D /* LaunchScreen.storyboard */,
+				7AD560FB1C33DC57009BD07D /* Info.plist */,
 				7A80BFF51C4F2237000DB77F /* framework */,
 				7AD560EB1C33DC57009BD07D /* main.m */,
 			);
@@ -211,6 +243,77 @@
 			path = "课程设计-3D导航UITests";
 			sourceTree = "<group>";
 		};
+		8DE7CEDED8EEC4D0A0915E5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5454DF8569AB8AC14A904BA7 /* Pods-课程设计-3D导航.debug.xcconfig */,
+				ED494637E4721C937E3B081F /* Pods-课程设计-3D导航.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A73310661CE595C000E7560F /* 主页 */ = {
+			isa = PBXGroup;
+			children = (
+				7A80BFFC1C4F2B1C000DB77F /* YPViewController.h */,
+				7A80BFFD1C4F2B1C000DB77F /* YPViewController.m */,
+				A73310761CE7290700E7560F /* YPToastView.h */,
+				A73310771CE7290700E7560F /* YPToastView.m */,
+			);
+			name = "主页";
+			sourceTree = "<group>";
+		};
+		A76A75071CE4C65F00D897DD /* 室内地图 */ = {
+			isa = PBXGroup;
+			children = (
+				A76A750A1CE4C68B00D897DD /* model */,
+				A76A75091CE4C68500D897DD /* view */,
+				A76A75081CE4C66F00D897DD /* controller */,
+			);
+			name = "室内地图";
+			sourceTree = "<group>";
+		};
+		A76A75081CE4C66F00D897DD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA83A11CE4276700696F66 /* YPDormMapViewController.h */,
+				A7FA83A21CE4276700696F66 /* YPDormMapViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		A76A75091CE4C68500D897DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A76A750B1CE4C6A800D897DD /* YPDormMapView.h */,
+				A76A750C1CE4C6A800D897DD /* YPDormMapView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		A76A750A1CE4C68B00D897DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A75135AD1D06DA10003DDACD /* Fingerprin.h */,
+				A75135AE1D06DA10003DDACD /* Fingerprin.m */,
+				A73310241CE5757B00E7560F /* UIColor+extend.h */,
+				A73310251CE5757B00E7560F /* UIColor+extend.m */,
+				A75135B01D06E773003DDACD /* YPDistModel.h */,
+				A75135B11D06E773003DDACD /* YPDistModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		C635D6C578E4E38E5CE562FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A73310691CE6274E00E7560F /* libMasonry.a */,
+				A73310671CE6274900E7560F /* libFMDB.a */,
+				876E6027214097AB3ECFC25B /* libPods-课程设计-3D导航.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AD561141C33DC57009BD07D /* Build configuration list for PBXNativeTarget "课程设计-3D导航" */;
 			buildPhases = (
+				8CBED1475B730608E8FBC098 /* [CP] Check Pods Manifest.lock */,
 				7AD560E31C33DC57009BD07D /* Sources */,
 				7AD560E41C33DC57009BD07D /* Frameworks */,
 				7AD560E51C33DC57009BD07D /* Resources */,
+				A10BB8BC80F0FAC42DDE4084 /* [CP] Embed Pods Frameworks */,
+				402F1CB5B51AC2CD69A0BD44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,14 +442,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		402F1CB5B51AC2CD69A0BD44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-课程设计-3D导航/Pods-课程设计-3D导航-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CBED1475B730608E8FBC098 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A10BB8BC80F0FAC42DDE4084 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-课程设计-3D导航/Pods-课程设计-3D导航-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7AD560E31C33DC57009BD07D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75135B21D06E773003DDACD /* YPDistModel.m in Sources */,
+				A7FA83A31CE4276700696F66 /* YPDormMapViewController.m in Sources */,
+				A76A750D1CE4C6A800D897DD /* YPDormMapView.m in Sources */,
 				7A80BFFE1C4F2B1C000DB77F /* YPViewController.m in Sources */,
 				7AD560EF1C33DC57009BD07D /* AppDelegate.m in Sources */,
 				7AD560EC1C33DC57009BD07D /* main.m in Sources */,
+				A75135AF1D06DA10003DDACD /* Fingerprin.m in Sources */,
+				A73310261CE5757B00E7560F /* UIColor+extend.m in Sources */,
+				A73310781CE7290700E7560F /* YPToastView.m in Sources */,
+				A75135AC1D06B10B003DDACD /* iToast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +590,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -467,6 +628,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -474,39 +636,75 @@
 		};
 		7AD561151C33DC57009BD07D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5454DF8569AB8AC14A904BA7 /* Pods-课程设计-3D导航.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: SuishenYun(Nanjing)Information Technology Co., Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Li Jianguo (MYL358RBSN)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = "课程设计-3D导航/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/课程设计-3D导航",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"FMDB\"",
+					"-l\"Masonry\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ypj.bysj.3D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		7AD561161C33DC57009BD07D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED494637E4721C937E3B081F /* Pods-课程设计-3D导航.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: SuishenYun(Nanjing)Information Technology Co., Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Li Jianguo (MYL358RBSN)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = "课程设计-3D导航/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/课程设计-3D导航",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"FMDB\"",
+					"-l\"Masonry\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ypj.bysj.3D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -516,9 +714,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "课程设计-3D导航Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.etouch.-----3D--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/课程设计-3D导航.app/课程设计-3D导航";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -531,6 +731,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.etouch.-----3D--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/课程设计-3D导航.app/课程设计-3D导航";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -539,10 +740,12 @@
 			buildSettings = {
 				INFOPLIST_FILE = "课程设计-3D导航UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.etouch.-----3D--UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "课程设计-3D导航";
 				USES_XCTRUNNER = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -555,6 +758,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "课程设计-3D导航";
 				USES_XCTRUNNER = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
